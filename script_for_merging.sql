@@ -1,3 +1,7 @@
+DROP TABLE EXISTING_CUSTOMERS;
+
+DROP TABLE NEW_CUSTOMERS;
+
 CREATE TABLE existing_customers (
   customer_id NUMBER(5),
   first_name VARCHAR2(100),
@@ -52,3 +56,14 @@ BEGIN
 	INSERT INTO new_customers (customer_id, first_name, last_name, address_state, email_address) 
 	VALUES (4, 'Alice', 'Howard', 'SC', 'aliceperry@gmail.com');
 END;
+
+
+SELECT * FROM EXISTING_CUSTOMERS;
+
+SELECT * FROM NEW_CUSTOMERS;
+
+
+
+        
+
+
